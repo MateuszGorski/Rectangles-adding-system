@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Rectangles</title>
+    <link rel="stylesheet" href="colors.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="mainContainer" class="main-container">
+        <div class="small-rect"></div>
+    </div>
+    <button id="add-button" type="button" class="adding-button">+</button>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Add new rectangle</h1>
+            <h2>Choose size</h2>
+            <div class="btn-group">
+                <button id="smallSizeButton" value="small">small</button>
+                <button id="mediumSizeButton" value="medium">medium</button>
+                <button id="largeSizeButton" value="large">large</button>
+            </div>
+            <h2>Choose color</h2>
+            <div class="btn-group">
+                <button id="colorGreen" value="green"></button>
+                <button id="colorPink" value="pink"></button>
+                <button id="colorYellow" value="yellow"></button>
+            </div>
+            <div class="btn-group margin-top">
+                <button id="colorRed" value="red"></button>
+                <button id="colorBrown" value="brown"></button>
+                <button id="colorBlue" value="blue"></button>
+            </div>
+            <div class="wrapper">
+                <h2>Choose position</h2>
+                <div class="btn-group">
+                    <button id="startPosition" value="start">start</button>
+                    <button id="endPosition" value="end">end</button>
+                </div>
+                <p>Or, after which element to place </p>
+                <div id="alreadyAdded" class="btn-group"></div>
+            </div>
+            <div class="btn-group">
+                <button id="addColorButton">Add</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="colors.js"></script>
+</body>
+
+</html>
